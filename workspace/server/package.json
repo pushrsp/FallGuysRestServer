@@ -1,0 +1,34 @@
+{
+  "name": "@fallguys/server",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/node": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nodemon": "^2.0.19",
+    "pino": "^8.1.0",
+    "pino-pretty": "^8.1.0",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.8.2",
+    "typescript": "^4.7.4"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev nodemon --exec 'ts-node' server.ts"
+  },
+  "dependencies": {
+    "@fallguys/core": "1.0.0",
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "fastify": "^4.2.0",
+    "fastify-plugin": "^3.0.1",
+    "mssql": "^8.1.2",
+    "typeorm": "^0.3.7"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@fallguys/core",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "schema:sync": "cross-env NODE_ENV=dev ts-node ../../node_modules/typeorm/cli.js schema:sync -d config/migration.ts"
+  }
+}

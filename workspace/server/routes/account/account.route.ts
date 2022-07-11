@@ -1,7 +1,7 @@
 import { DoneFuncWithErrOrRes, FastifyServerOptions } from "fastify";
 import { Instance } from "@fallguys/core";
 
-import { createAccount } from "./account.handler";
+import { createAccount, loginAccount } from "./account.handler";
 
 export default function (
   instance: Instance,
@@ -13,6 +13,10 @@ export default function (
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   instance.post("/", { handler: createAccount });
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  instance.post("/login", { handler: loginAccount });
 
   done();
 }
